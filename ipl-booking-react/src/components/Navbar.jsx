@@ -18,6 +18,12 @@ function Navbar({ activeTab, setActiveTab }) {
           >
             Matches
           </a>
+          <a
+            className={activeTab === 'bookings' ? 'active-link' : ''}
+            onClick={() => setActiveTab('bookings')}
+          >
+            My Bookings
+          </a>
         </nav>
       </div>
     </header>
